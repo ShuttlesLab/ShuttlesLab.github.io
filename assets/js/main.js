@@ -4,7 +4,7 @@
 
   var NAV_ITEMS = [
     { id: 'home', zh: '首页', en: 'Home', href: 'index.html' },
-    { id: 'research', zh: '研究方向与团队', en: 'Research & Team', href: 'research.html' },
+    { id: 'research', zh: '成员方向', en: 'Members & Directions', href: 'research.html' },
     { id: 'publications', zh: '发表论文', en: 'Publications', href: 'publications.html' },
     { id: 'news', zh: '新闻动态', en: 'News', href: 'news.html' },
     { id: 'join', zh: '加入我们', en: 'Join Us', href: 'join.html' }
