@@ -120,6 +120,7 @@ img { max-width: 100%; }
   margin-bottom: 8px;
 }
 .hero h1 { font-size: clamp(42px, 6vw, 66px); font-weight: 800; letter-spacing: 1px; }
+.hero h1 .lab-gap { margin-left: 0.2em; }
 .hero .tagline { font-size: clamp(17px, 2.2vw, 23px); opacity: 0.95; margin: 14px 0 12px; font-weight: 600; }
 .hero .lead { max-width: 720px; opacity: 0.85; font-size: 15.5px; }
 .btn-row { margin-top: 30px; display: flex; gap: 14px; flex-wrap: wrap; }
