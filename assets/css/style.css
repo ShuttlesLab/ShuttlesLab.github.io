@@ -300,15 +300,22 @@ img.avatar { display: block; margin: 0 auto; }
   background: #fff;
   border: 1px solid var(--border);
   border-radius: 10px;
-  padding: 14px 22px;
+  padding: 12px 22px;
   margin-bottom: 12px;
   font-size: 15px;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
   gap: 16px;
   flex-wrap: wrap;
 }
-.alumni-list .a-name { font-weight: 600; color: var(--primary-dark); }
+.alumni-list .a-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.alumni-list .a-name { margin-right: auto; font-weight: 600; color: var(--primary-dark); }
 .alumni-list .a-dest { color: var(--muted); font-size: 14px; }
 
 /* ========== 发表论文页 ========== */
