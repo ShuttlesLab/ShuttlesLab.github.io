@@ -208,17 +208,20 @@ img { max-width: 100%; }
 .page-hero h1 { font-size: 34px; letter-spacing: 1px; }
 .page-hero p { opacity: 0.85; margin-top: 10px; font-size: 15px; }
 
-/* ========== 研究方向页 ========== */
-.research-block {
-  display: grid;
-  grid-template-columns: 200px 1fr;
-  gap: 30px;
+/* ========== 成员方向页 ========== */
+.direction-card {
   background: #fff;
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 30px;
-  margin-bottom: 26px;
+  margin-bottom: 30px;
   box-shadow: var(--shadow);
+}
+.dc-head {
+  display: flex;
+  gap: 22px;
+  align-items: flex-start;
+  margin-bottom: 24px;
 }
 .rb-icon {
   border-radius: 10px;
@@ -227,19 +230,17 @@ img { max-width: 100%; }
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 160px;
+  width: 76px;
+  height: 76px;
+  flex-shrink: 0;
 }
-.research-block h3 { color: var(--primary-dark); font-size: 20px; margin-bottom: 10px; }
-.research-block p { color: var(--muted); font-size: 15px; margin-bottom: 10px; }
-.tag {
-  display: inline-block;
-  background: #e0f2fe;
-  color: var(--primary);
-  font-size: 12.5px;
-  font-weight: 600;
-  padding: 3px 12px;
-  border-radius: 999px;
-  margin: 0 6px 6px 0;
+.direction-card h3 { color: var(--primary-dark); font-size: 20px; margin-bottom: 8px; }
+.direction-card .dc-head p { color: var(--muted); font-size: 15px; }
+.direction-card .people-grid { grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 16px; }
+.direction-card .person {
+  background: var(--bg-soft, #f8fafc);
+  box-shadow: none;
+  padding: 22px 12px;
 }
 
 .project-list { list-style: none; }
@@ -425,8 +426,7 @@ img.avatar { display: block; margin: 0 auto; }
   .grid-3 { grid-template-columns: repeat(2, 1fr); }
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .pi-card { flex-direction: column; text-align: center; }
-  .research-block { grid-template-columns: 1fr; }
-  .rb-icon { min-height: 120px; }
+  .dc-head { flex-direction: column; }
   .about-grid { grid-template-columns: 1fr; gap: 28px; }
   .about-logo img { max-width: 220px; }
 }
