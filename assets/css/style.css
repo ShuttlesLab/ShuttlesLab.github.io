@@ -220,7 +220,7 @@ img { max-width: 100%; }
 .dc-head {
   display: flex;
   gap: 22px;
-  align-items: flex-start;
+  align-items: center;
   margin-bottom: 24px;
 }
 .rb-icon {
