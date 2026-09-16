@@ -122,7 +122,6 @@ img { max-width: 100%; }
 .hero h1 { font-size: clamp(42px, 6vw, 66px); font-weight: 800; letter-spacing: 1px; }
 .hero h1 .lab-gap { margin-left: 0.2em; }
 .hero .tagline { font-size: clamp(17px, 2.2vw, 23px); opacity: 0.95; margin: 14px 0 12px; font-weight: 600; }
-.hero .lead { max-width: 720px; opacity: 0.85; font-size: 15.5px; }
 .btn-row { margin-top: 30px; display: flex; gap: 14px; flex-wrap: wrap; }
 
 .stats { display: flex; gap: 48px; margin-top: 52px; flex-wrap: wrap; }
@@ -174,7 +173,6 @@ img { max-width: 100%; }
 
 /* ========== 卡片栅格 ========== */
 .grid { display: grid; gap: 24px; }
-.grid-2 { grid-template-columns: repeat(2, 1fr); }
 .grid-3 { grid-template-columns: repeat(3, 1fr); }
 .grid-4 { grid-template-columns: repeat(4, 1fr); }
 
@@ -319,36 +317,6 @@ img.avatar { display: block; margin: 0 auto; }
 .alumni-list .a-name { margin-right: auto; font-weight: 600; color: var(--primary-dark); }
 .alumni-list .a-dest { color: var(--muted); font-size: 14px; }
 
-/* ========== 发表论文页 ========== */
-.pub-year {
-  font-size: 22px;
-  color: var(--primary-dark);
-  border-left: 4px solid var(--accent);
-  padding-left: 14px;
-  margin: 40px 0 18px;
-}
-.pub-entry {
-  background: #fff;
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 18px 24px;
-  margin-bottom: 14px;
-}
-.pub-entry .title { font-weight: 600; font-size: 15.5px; }
-.pub-entry .authors { color: var(--muted); font-size: 14px; margin-top: 4px; }
-.pub-entry .venue { font-style: italic; color: var(--primary); font-size: 14px; margin-top: 2px; }
-.pub-links { margin-top: 10px; }
-.pub-links a {
-  font-size: 12.5px;
-  font-weight: 600;
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  padding: 3px 12px;
-  margin-right: 8px;
-  color: var(--primary);
-}
-.pub-links a:hover { background: var(--primary); color: #fff; border-color: var(--primary); }
-.page-note { text-align: center; color: var(--muted); font-size: 14px; margin-bottom: 8px; }
 
 /* ========== 新闻页 ========== */
 .news-item {
@@ -441,7 +409,7 @@ img.avatar { display: block; margin: 0 auto; }
     gap: 14px;
   }
   .nav-links.open { display: flex; }
-  .grid-4, .grid-3, .grid-2 { grid-template-columns: 1fr; }
+  .grid-4, .grid-3 { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; }
   .hero { padding: 64px 0 56px; }
   .stats { gap: 28px; }
