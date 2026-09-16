@@ -309,8 +309,8 @@ img.avatar { display: block; margin: 0 auto; }
   flex-wrap: wrap;
 }
 .alumni-list .a-avatar {
-  width: 44px;
-  height: 44px;
+  width: 26px;
+  height: 26px;
   border-radius: 50%;
   object-fit: cover;
   flex-shrink: 0;
