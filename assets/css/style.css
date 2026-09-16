@@ -371,7 +371,7 @@ img.avatar { display: block; margin: 0 auto; }
   padding: 12px 8px;
   flex-shrink: 0;
 }
-.date-badge .d { font-size: 22px; font-weight: 800; display: block; line-height: 1.2; }
+.date-badge .d { font-size: 17px; font-weight: 800; display: block; line-height: 1.2; white-space: nowrap; }
 .date-badge .ym { font-size: 12px; opacity: 0.9; }
 .news-body h3 { font-size: 17px; color: var(--primary-dark); margin-bottom: 6px; }
 .news-body p { font-size: 14.5px; color: var(--muted); }
