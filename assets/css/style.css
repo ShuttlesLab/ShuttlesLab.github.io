@@ -278,6 +278,8 @@ img { max-width: 100%; }
 }
 .avatar.big { width: 128px; height: 128px; font-size: 42px; }
 .avatar.photo { object-fit: cover; object-position: center 20%; }
+img.avatar { display: block; margin: 0 auto; }
+.pi-card img.avatar { margin: 0; }
 .pi-card .name { font-size: 22px; font-weight: 700; color: var(--primary-dark); }
 .pi-card .role { color: var(--accent); font-weight: 600; margin: 4px 0 10px; }
 .pi-card .info { color: var(--muted); font-size: 14.5px; }
