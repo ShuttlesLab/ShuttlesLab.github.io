@@ -3,24 +3,25 @@
   'use strict';
 
   var NAV_ITEMS = [
-    { id: 'home', label: 'Home', href: 'index.html' },
-    { id: 'research', label: 'Members & Directions', href: 'research.html' },
-    { id: 'news', label: 'News', href: 'news.html' },
-    { id: 'join', label: 'Join Us', href: 'join.html' }
+    { id: 'about', label: 'About', href: '#about' },
+    { id: 'research', label: 'Research', href: '#research' },
+    { id: 'news', label: 'News', href: '#news' },
+    { id: 'members', label: 'Members', href: '#members' },
+    { id: 'join', label: 'Join Us', href: '#join' },
+    { id: 'contact', label: 'Contact', href: '#contact' }
   ];
 
   function renderHeader() {
     var host = document.getElementById('site-header');
     if (!host) return;
-    var page = document.body.getAttribute('data-page');
     var links = NAV_ITEMS.map(function (item) {
-      var cls = item.id === page ? ' class="active"' : '';
-      return '<a href="' + item.href + '"' + cls + '>' + item.label + '</a>';
+      return '<a href="' + item.href + '" data-target="' + item.id + '">' +
+        item.label + '</a>';
     }).join('');
 
     host.innerHTML =
       '<div class="container nav">' +
-        '<a class="logo" href="index.html">' +
+        '<a class="logo" href="#top">' +
           '<img src="assets/img/logo-icon.png" alt="ShuttlesLab">' +
           'Shuttles<span>Lab</span>' +
         '</a>' +
@@ -67,10 +68,38 @@
       '</div>';
   }
 
+  function initScrollSpy() {
+    var links = document.querySelectorAll('#nav-links a[data-target]');
+    if (!links.length) return;
+    var sections = [];
+    for (var i = 0; i < links.length; i++) {
+      var sec = document.getElementById(links[i].getAttribute('data-target'));
+      if (sec) sections.push({ link: links[i], section: sec });
+    }
+    if (!sections.length) return;
+
+    function update() {
+      var pos = window.pageYOffset + 120;
+      var current = sections[0].link;
+      for (var j = 0; j < sections.length; j++) {
+        if (sections[j].section.offsetTop <= pos) current = sections[j].link;
+      }
+      for (var k = 0; k < links.length; k++) {
+        links[k].classList.remove('active');
+      }
+      current.classList.add('active');
+    }
+
+    window.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update);
+    update();
+  }
+
   document.addEventListener('DOMContentLoaded', function () {
     document.documentElement.lang = 'en';
     renderHeader();
     renderFooter();
+    initScrollSpy();
 
     var navToggle = document.getElementById('nav-toggle');
     var navLinks = document.getElementById('nav-links');
