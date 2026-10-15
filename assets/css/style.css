@@ -77,19 +77,27 @@ img { max-width: 100%; }
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 18px 44px;
+  align-items: flex-start;
+  gap: 26px 48px;
 }
-.facility { display: flex; align-items: center; gap: 12px; }
+.facility {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  max-width: 180px;
+  text-align: center;
+}
 .facility-icon {
-  width: 46px; height: 46px;
-  border-radius: 12px;
+  width: 54px; height: 54px;
+  border-radius: 14px;
   display: flex; align-items: center; justify-content: center;
   background: linear-gradient(135deg, var(--primary), var(--accent));
   color: #fff;
   flex-shrink: 0;
 }
-.facility-icon svg { width: 26px; height: 26px; }
-.facility h3 { font-size: 15px; color: var(--primary-dark); }
+.facility-icon svg { width: 28px; height: 28px; }
+.facility h3 { font-size: 14px; color: var(--primary-dark); }
 
 /* ========== News ========== */
 .news-item {
