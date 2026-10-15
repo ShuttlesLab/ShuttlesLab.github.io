@@ -17,6 +17,7 @@ html { scroll-behavior: smooth; }
 
 body {
   font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 15px;
   color: var(--text);
   background: var(--bg);
   line-height: 1.7;
@@ -33,16 +34,16 @@ img { max-width: 100%; }
   padding: 72px 0 40px;
 }
 .hero-logo { width: 96px; height: auto; display: block; margin-bottom: 18px; }
-.hero h1 { font-size: clamp(38px, 5.5vw, 56px); font-weight: 800; letter-spacing: 1px; }
+.hero h1 { font-size: clamp(32px, 4.6vw, 48px); font-weight: 800; letter-spacing: 1px; }
 .hero h1 .lab-gap { margin-left: 0.2em; }
-.hero .tagline { font-size: clamp(16px, 2vw, 20px); color: var(--muted); margin-top: 12px; font-weight: 600; }
+.hero .tagline { font-size: clamp(14px, 1.7vw, 17px); color: var(--muted); margin-top: 12px; font-weight: 600; }
 
 /* ========== Generic section ========== */
 .section { padding: 72px 0; }
 .section.alt { background: #fff; }
 .section-title { text-align: center; margin-bottom: 46px; }
-.section-title h2 { font-size: 30px; color: var(--primary-dark); }
-.section-title .sub { color: var(--muted); margin-top: 8px; font-size: 15px; }
+.section-title h2 { font-size: 25px; color: var(--primary-dark); }
+.section-title .sub { color: var(--muted); margin-top: 8px; font-size: 13px; }
 .section-title .bar { width: 56px; height: 4px; background: var(--accent); margin: 14px auto 0; border-radius: 2px; }
 
 /* ========== Tiles (Research / Join) ========== */
@@ -56,7 +57,7 @@ img { max-width: 100%; }
   background: linear-gradient(135deg, var(--primary), var(--accent));
   color: #fff;
 }
-.tile h3 { font-size: 22px; color: var(--primary-dark); }
+.tile h3 { font-size: 19px; color: var(--primary-dark); }
 
 /* ========== News ========== */
 .news-item {
@@ -76,10 +77,10 @@ img { max-width: 100%; }
   padding: 12px 8px;
   flex-shrink: 0;
 }
-.date-badge .d { font-size: 17px; font-weight: 800; display: block; line-height: 1.2; white-space: nowrap; }
-.date-badge .ym { font-size: 12px; opacity: 0.9; }
-.news-body h3 { font-size: 17px; color: var(--primary-dark); margin-bottom: 6px; }
-.news-body p { font-size: 14.5px; color: var(--muted); }
+.date-badge .d { font-size: 15px; font-weight: 800; display: block; line-height: 1.2; white-space: nowrap; }
+.date-badge .ym { font-size: 11px; opacity: 0.9; }
+.news-body h3 { font-size: 15px; color: var(--primary-dark); margin-bottom: 6px; }
+.news-body p { font-size: 13px; color: var(--muted); }
 
 /* ========== Members ========== */
 .pi-card {
@@ -98,16 +99,16 @@ img { max-width: 100%; }
   width: 84px; height: 84px;
   border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
-  font-size: 28px; font-weight: 700;
+  font-size: 24px; font-weight: 700;
   color: #fff;
   background: linear-gradient(135deg, var(--primary), var(--accent));
   flex-shrink: 0;
 }
-.avatar.big { width: 128px; height: 128px; font-size: 42px; }
+.avatar.big { width: 128px; height: 128px; font-size: 36px; }
 .avatar.photo { object-fit: cover; object-position: center 20%; }
 img.avatar { display: block; margin: 0 auto; }
 .pi-card img.avatar { margin: 0; }
-.pi-card .name { font-size: 22px; font-weight: 700; color: var(--primary-dark); }
+.pi-card .name { font-size: 19px; font-weight: 700; color: var(--primary-dark); }
 .pi-card .role { color: var(--accent); font-weight: 600; margin-top: 4px; }
 
 .people-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 20px; }
@@ -121,11 +122,11 @@ img.avatar { display: block; margin: 0 auto; }
   transition: 0.25s;
 }
 .person:hover { transform: translateY(-4px); }
-.person .name { font-weight: 700; color: var(--primary-dark); font-size: 16px; margin-top: 12px; }
-.person .role { font-size: 13px; color: var(--accent); font-weight: 600; margin-top: 2px; }
+.person .name { font-weight: 700; color: var(--primary-dark); font-size: 14px; margin-top: 12px; }
+.person .role { font-size: 12px; color: var(--accent); font-weight: 600; margin-top: 2px; }
 
 .sub-heading {
-  font-size: 20px;
+  font-size: 17px;
   color: var(--primary-dark);
   border-left: 4px solid var(--accent);
   padding-left: 14px;
@@ -138,7 +139,7 @@ img.avatar { display: block; margin: 0 auto; }
   border-radius: 10px;
   padding: 12px 22px;
   margin-bottom: 12px;
-  font-size: 15px;
+  font-size: 13px;
   display: flex;
   align-items: center;
   gap: 16px;
@@ -146,7 +147,7 @@ img.avatar { display: block; margin: 0 auto; }
 }
 .alumni-list .a-avatar { width: 26px; height: 26px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
 .alumni-list .a-name { margin-right: auto; font-weight: 600; color: var(--primary-dark); }
-.alumni-list .a-dest { color: var(--muted); font-size: 14px; }
+.alumni-list .a-dest { color: var(--muted); font-size: 12px; }
 
 /* ========== Join / Apply ========== */
 .apply-box {
@@ -158,7 +159,7 @@ img.avatar { display: block; margin: 0 auto; }
   max-width: 720px;
   margin: 0 auto;
 }
-.apply-box p { margin-bottom: 10px; font-size: 15px; }
+.apply-box p { margin-bottom: 10px; font-size: 13px; }
 .apply-box p:last-child { margin-bottom: 0; }
 
 /* ========== Responsive ========== */
