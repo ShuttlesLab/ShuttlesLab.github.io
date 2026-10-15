@@ -106,9 +106,7 @@ def lighten(color, amt):
 
 
 PEOPLE = {
-    "avatar-zhangying.png": dict(bg=(255, 214, 214, 255), skin=(255, 224, 196, 255),
-                                 hair=(74, 52, 46, 255), style="bob", glasses=True,
-                                 hair_accent=(176, 98, 118, 255)),
+    # avatar-zhangying.png is a real photo (not generated), so it is not listed here.
     "avatar-zhi.png": dict(bg=(255, 236, 190, 255), skin=(255, 226, 200, 255),
                            hair=(52, 44, 40, 255), style="short",
                            hair_accent=(74, 124, 89, 255)),
