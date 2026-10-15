@@ -35,16 +35,11 @@ img { max-width: 100%; }
 .hero h1 .lab-gap { margin-left: 0.2em; }
 .hero .tagline { font-size: clamp(14px, 1.7vw, 17px); color: var(--muted); margin-top: 6px; font-weight: 600; }
 .hero .founded {
-  display: inline-block;
-  margin-top: 10px;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.4px;
-  color: var(--primary);
-  background: #eef4fb;
-  border: 1px solid #d6e4f5;
-  border-radius: 999px;
-  padding: 3px 12px;
+  display: block;
+  margin-top: 6px;
+  font-size: clamp(12px, 1.4vw, 14px);
+  font-weight: 600;
+  color: var(--muted);
 }
 
 /* ========== Generic section ========== */
