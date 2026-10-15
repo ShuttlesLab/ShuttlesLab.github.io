@@ -7,12 +7,12 @@ Guidance for AI agents working in this repository.
 ShuttlesLab official website: a static, **English-only** single-page site hosted on
 GitHub Pages (repository name `ShuttlesLab.github.io`).
 
-- `index.html` — the single page (Hero, About, Research, News, Members, Join, Contact)
+- `index.html` — the single page (Hero, Research, News, Members, Join Us)
 - `assets/css/style.css` — site styles
-- `assets/js/main.js` — injects the navigation bar and footer, scroll-spy
 - `assets/img/` — logos and member avatars
 - `tools/make_avatars.py` — helper script to generate member avatars
 
+There is no header/footer and no JavaScript: the page is plain HTML + CSS.
 There is no build step; editing files and pushing is enough to deploy.
 
 ## Git workflow — IMPORTANT
