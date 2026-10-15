@@ -1,4 +1,4 @@
-/* ========== ShuttleLab 全局样式 ========== */
+/* ========== ShuttleLab global styles ========== */
 :root {
   --primary: #1f5fa8;
   --primary-dark: #0d2b4e;
@@ -27,7 +27,7 @@ body {
 a { color: var(--primary); text-decoration: none; }
 img { max-width: 100%; }
 
-/* ========== 顶部导航 ========== */
+/* ========== Header navigation ========== */
 #site-header {
   position: sticky;
   top: 0;
@@ -66,18 +66,6 @@ img { max-width: 100%; }
   background: var(--accent);
   border-radius: 2px;
 }
-.lang-toggle {
-  border: 1px solid var(--border);
-  background: #fff;
-  border-radius: 999px;
-  padding: 5px 16px;
-  cursor: pointer;
-  font-size: 13px;
-  color: var(--primary);
-  font-weight: 700;
-  transition: 0.2s;
-}
-.lang-toggle:hover { background: var(--primary); color: #fff; border-color: var(--primary); }
 .nav-toggle {
   display: none;
   border: none;
@@ -87,7 +75,7 @@ img { max-width: 100%; }
   cursor: pointer;
 }
 
-/* ========== 首页 Hero ========== */
+/* ========== Home hero ========== */
 .hero {
   background: linear-gradient(135deg, #0d2b4e 0%, #1f5fa8 75%, #0090b0 130%);
   color: #fff;
@@ -128,7 +116,7 @@ img { max-width: 100%; }
 .stat .num { font-size: 30px; font-weight: 800; }
 .stat .label { opacity: 0.8; font-size: 14px; }
 
-/* ========== 按钮 ========== */
+/* ========== Buttons ========== */
 .btn {
   display: inline-block;
   padding: 12px 28px;
@@ -146,7 +134,7 @@ img { max-width: 100%; }
 .btn-solid { background: var(--primary); color: #fff; }
 .btn-solid:hover { background: var(--primary-dark); transform: translateY(-2px); }
 
-/* ========== 通用 Section ========== */
+/* ========== Generic section ========== */
 .section { padding: 72px 0; }
 .section.alt { background: #fff; }
 .section-title { text-align: center; margin-bottom: 46px; }
@@ -171,7 +159,7 @@ img { max-width: 100%; }
   filter: drop-shadow(0 10px 24px rgba(13, 43, 78, 0.12));
 }
 
-/* ========== 卡片栅格 ========== */
+/* ========== Card grid ========== */
 .grid { display: grid; gap: 24px; }
 .grid-3 { grid-template-columns: repeat(3, 1fr); }
 .grid-4 { grid-template-columns: repeat(4, 1fr); }
@@ -197,7 +185,7 @@ img { max-width: 100%; }
 .card p { font-size: 14.5px; color: var(--muted); }
 .card .more { display: inline-block; margin-top: 12px; font-size: 13.5px; font-weight: 600; }
 
-/* ========== 子页面页头 ========== */
+/* ========== Sub-page header ========== */
 .page-hero {
   background: linear-gradient(135deg, var(--primary-dark), var(--primary));
   color: #fff;
@@ -207,7 +195,7 @@ img { max-width: 100%; }
 .page-hero h1 { font-size: 34px; letter-spacing: 1px; }
 .page-hero p { opacity: 0.85; margin-top: 10px; font-size: 15px; }
 
-/* ========== 成员方向页 ========== */
+/* ========== Members & directions page ========== */
 .direction-card {
   background: #fff;
   border: 1px solid var(--border);
@@ -242,7 +230,7 @@ img { max-width: 100%; }
   padding: 22px 12px;
 }
 
-/* ========== 团队成员页 ========== */
+/* ========== Team members page ========== */
 .pi-card {
   display: flex;
   gap: 32px;
@@ -318,7 +306,7 @@ img.avatar { display: block; margin: 0 auto; }
 .alumni-list .a-dest { color: var(--muted); font-size: 14px; }
 
 
-/* ========== 新闻页 ========== */
+/* ========== News page ========== */
 .news-item {
   display: flex;
   gap: 22px;
@@ -341,7 +329,7 @@ img.avatar { display: block; margin: 0 auto; }
 .news-body h3 { font-size: 17px; color: var(--primary-dark); margin-bottom: 6px; }
 .news-body p { font-size: 14.5px; color: var(--muted); }
 
-/* ========== 加入我们页 ========== */
+/* ========== Join us page ========== */
 .req-list { padding-left: 22px; }
 .req-list li { margin-bottom: 8px; color: var(--muted); font-size: 15px; }
 .contact-box {
@@ -356,7 +344,7 @@ img.avatar { display: block; margin: 0 auto; }
 .contact-box p { margin-bottom: 10px; font-size: 15px; }
 .contact-box .label { font-weight: 700; color: var(--primary-dark); display: inline-block; min-width: 76px; }
 
-/* ========== CTA 横幅 ========== */
+/* ========== CTA banner ========== */
 .cta {
   background: linear-gradient(135deg, var(--primary-dark), var(--primary));
   color: #fff;
@@ -367,7 +355,7 @@ img.avatar { display: block; margin: 0 auto; }
 .cta h2 { font-size: 26px; margin-bottom: 10px; }
 .cta p { opacity: 0.85; margin-bottom: 24px; }
 
-/* ========== 页脚 ========== */
+/* ========== Footer ========== */
 #site-footer { background: var(--primary-dark); color: #cbd5e1; padding: 56px 0 0; }
 .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1.4fr; gap: 40px; padding-bottom: 40px; }
 #site-footer h4 { color: #fff; margin-bottom: 14px; font-size: 16px; }
@@ -384,7 +372,7 @@ img.avatar { display: block; margin: 0 auto; }
   opacity: 0.7;
 }
 
-/* ========== 响应式 ========== */
+/* ========== Responsive ========== */
 @media (max-width: 960px) {
   .grid-4 { grid-template-columns: repeat(2, 1fr); }
   .grid-3 { grid-template-columns: repeat(2, 1fr); }

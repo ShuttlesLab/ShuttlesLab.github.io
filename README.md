@@ -1,6 +1,7 @@
 # ShuttlesLab
 
-## 关于
+## About
 
-ShuttlesLab 是依托哈尔滨工业大学（深圳）智能科学与工程学院、由张颖教授领衔的科研团队，
-四川大学空天科学与工程学院张凯副研究员共同指导。
+ShuttlesLab is a research group based at the School of Intelligence Science and Engineering,
+Harbin Institute of Technology (Shenzhen), led by Prof. Ying Zhang, and co-advised by
+Associate Prof. Kai Zhang from the School of Aeronautics and Astronautics, Sichuan University.
