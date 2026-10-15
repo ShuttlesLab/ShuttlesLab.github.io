@@ -34,6 +34,18 @@ img { max-width: 100%; }
 .hero h1 { font-size: clamp(32px, 4.6vw, 48px); font-weight: 800; letter-spacing: 1px; }
 .hero h1 .lab-gap { margin-left: 0.2em; }
 .hero .tagline { font-size: clamp(14px, 1.7vw, 17px); color: var(--muted); margin-top: 6px; font-weight: 600; }
+.hero .founded {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  color: var(--primary);
+  background: #eef4fb;
+  border: 1px solid #d6e4f5;
+  border-radius: 999px;
+  padding: 3px 12px;
+}
 
 /* ========== Generic section ========== */
 .section { padding: 72px 0; }
@@ -118,6 +130,23 @@ img.avatar { display: block; margin: 0 auto; }
   margin: 36px 0 20px;
 }
 .section-title + .sub-heading { margin-top: 0; }
+.sub-sub-heading {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--primary);
+  margin: 22px 0 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.sub-sub-heading::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+  flex-shrink: 0;
+}
 
 /* ========== Join / Apply ========== */
 .apply-box { max-width: 760px; margin: 0 auto; text-align: justify; }
