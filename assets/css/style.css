@@ -3,7 +3,6 @@
   --primary: #1f5fa8;
   --primary-dark: #0d2b4e;
   --accent: #00b4d8;
-  --bg: #f5f7fb;
   --card: #ffffff;
   --text: #1f2937;
   --muted: #64748b;
@@ -19,7 +18,7 @@ body {
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   font-size: 15px;
   color: var(--text);
-  background: var(--bg);
+  background: #fff;
   line-height: 1.7;
 }
 
@@ -40,7 +39,6 @@ img { max-width: 100%; }
 
 /* ========== Generic section ========== */
 .section { padding: 72px 0; }
-.section.alt { background: #fff; }
 .section-title { text-align: center; margin-bottom: 46px; }
 .section-title h2 { font-size: 25px; color: var(--primary-dark); }
 .section-title .sub { color: var(--muted); margin-top: 8px; font-size: 13px; }
