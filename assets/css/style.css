@@ -100,6 +100,7 @@ img.avatar { display: block; margin: 0 auto; }
 .pi-card img.avatar { margin: 0; }
 .pi-card .name { font-size: 19px; font-weight: 700; color: var(--primary-dark); }
 .pi-card .role { color: var(--accent); font-weight: 600; margin-top: 4px; }
+.pi-card .pi-link { margin-top: 6px; font-size: 13px; }
 
 .people-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 20px; }
 .person {
