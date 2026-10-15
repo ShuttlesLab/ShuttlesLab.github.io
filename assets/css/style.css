@@ -123,6 +123,29 @@ img.avatar { display: block; margin: 0 auto; }
 .apply-box { max-width: 760px; margin: 0 auto; text-align: justify; }
 .apply-box p { font-size: 13px; }
 
+/* ========== Activities ========== */
+.activity-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 26px;
+}
+.activity-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+  background: var(--border);
+}
+.activity-card .activity-date {
+  font-size: 12px;
+  color: var(--accent);
+  font-weight: 600;
+  margin-top: 12px;
+}
+.activity-card h3 { font-size: 14px; color: var(--primary-dark); margin-top: 4px; }
+.activity-card p { font-size: 13px; color: var(--muted); margin-top: 6px; line-height: 1.65; }
+
 /* ========== Responsive ========== */
 @media (max-width: 960px) {
   .tiles { grid-template-columns: repeat(2, 1fr); }
