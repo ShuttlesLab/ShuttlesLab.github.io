@@ -3,12 +3,10 @@
   'use strict';
 
   var NAV_ITEMS = [
-    { id: 'about', label: 'About', href: '#about' },
     { id: 'research', label: 'Research', href: '#research' },
     { id: 'news', label: 'News', href: '#news' },
     { id: 'members', label: 'Members', href: '#members' },
-    { id: 'join', label: 'Join Us', href: '#join' },
-    { id: 'contact', label: 'Contact', href: '#contact' }
+    { id: 'join', label: 'Join Us', href: '#join' }
   ];
 
   function renderHeader() {
