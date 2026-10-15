@@ -3,12 +3,9 @@
   --primary: #1f5fa8;
   --primary-dark: #0d2b4e;
   --accent: #00b4d8;
-  --card: #ffffff;
   --text: #1f2937;
   --muted: #64748b;
   --border: #e2e8f0;
-  --radius: 14px;
-  --shadow: 0 6px 24px rgba(13, 43, 78, 0.08);
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -83,15 +80,9 @@ img { max-width: 100%; }
 /* ========== Members ========== */
 .pi-card {
   display: flex;
-  gap: 32px;
+  gap: 24px;
   align-items: center;
-  background: #fff;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  padding: 36px;
-  max-width: 860px;
-  margin: 0 auto 34px;
+  margin-bottom: 8px;
 }
 .avatar {
   width: 64px; height: 64px;
@@ -112,14 +103,8 @@ img.avatar { display: block; margin: 0 auto; }
 .people-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 20px; }
 .person {
   text-align: center;
-  padding: 26px 16px;
-  background: #fff;
-  border-radius: var(--radius);
-  border: 1px solid var(--border);
-  box-shadow: var(--shadow);
-  transition: 0.25s;
+  padding: 12px 8px;
 }
-.person:hover { transform: translateY(-4px); }
 .person .name { font-weight: 700; color: var(--primary-dark); font-size: 14px; margin-top: 12px; }
 .person .role { font-size: 12px; color: var(--accent); font-weight: 600; margin-top: 2px; }
 
@@ -133,17 +118,8 @@ img.avatar { display: block; margin: 0 auto; }
 .section-title + .sub-heading { margin-top: 0; }
 
 /* ========== Join / Apply ========== */
-.apply-box {
-  background: #fff;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  padding: 32px;
-  max-width: 720px;
-  margin: 0 auto;
-}
-.apply-box p { margin-bottom: 10px; font-size: 13px; }
-.apply-box p:last-child { margin-bottom: 0; }
+.apply-box { max-width: 760px; }
+.apply-box p { font-size: 13px; }
 
 /* ========== Responsive ========== */
 @media (max-width: 960px) {
