@@ -28,56 +28,14 @@ img { max-width: 100%; }
 
 /* ========== Hero ========== */
 .hero {
-  background: linear-gradient(135deg, #0d2b4e 0%, #1f5fa8 75%, #0090b0 130%);
-  color: #fff;
-  padding: 96px 0 76px;
-  position: relative;
-  overflow: hidden;
+  background: #fff;
+  color: var(--primary-dark);
+  padding: 72px 0 40px;
 }
-.hero::before {
-  content: "";
-  position: absolute;
-  right: -120px; top: -120px;
-  width: 420px; height: 420px;
-  border-radius: 50%;
-  background: rgba(0, 180, 216, 0.18);
-}
-.hero::after {
-  content: "";
-  position: absolute;
-  right: 120px; bottom: -160px;
-  width: 300px; height: 300px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.06);
-}
-.hero .container { position: relative; z-index: 1; }
-.hero-logo { width: 112px; height: auto; display: block; margin-bottom: 20px; }
-.hero-eyebrow {
-  font-size: 14px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  opacity: 0.75;
-  margin-bottom: 8px;
-}
-.hero h1 { font-size: clamp(42px, 6vw, 66px); font-weight: 800; letter-spacing: 1px; }
+.hero-logo { width: 96px; height: auto; display: block; margin-bottom: 18px; }
+.hero h1 { font-size: clamp(38px, 5.5vw, 56px); font-weight: 800; letter-spacing: 1px; }
 .hero h1 .lab-gap { margin-left: 0.2em; }
-.hero .tagline { font-size: clamp(17px, 2.2vw, 23px); opacity: 0.95; margin: 14px 0 12px; font-weight: 600; }
-.btn-row { margin-top: 30px; display: flex; gap: 14px; flex-wrap: wrap; }
-
-.btn {
-  display: inline-block;
-  padding: 12px 28px;
-  border-radius: 999px;
-  font-weight: 600;
-  font-size: 15px;
-  transition: 0.2s;
-  border: 2px solid transparent;
-  cursor: pointer;
-}
-.btn-primary { background: #fff; color: var(--primary-dark); }
-.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0, 0, 0, 0.22); }
-.btn-outline { border-color: rgba(255, 255, 255, 0.65); color: #fff; }
-.btn-outline:hover { background: rgba(255, 255, 255, 0.12); }
+.hero .tagline { font-size: clamp(16px, 2vw, 20px); color: var(--muted); margin-top: 12px; font-weight: 600; }
 
 /* ========== Generic section ========== */
 .section { padding: 72px 0; }
@@ -211,7 +169,7 @@ img.avatar { display: block; margin: 0 auto; }
 
 @media (max-width: 640px) {
   .tiles { grid-template-columns: 1fr; }
-  .hero { padding: 64px 0 56px; }
+  .hero { padding: 48px 0 28px; }
   .section { padding: 52px 0; }
   .news-item { flex-direction: column; gap: 12px; }
   .date-badge { width: fit-content; padding: 8px 14px; }
