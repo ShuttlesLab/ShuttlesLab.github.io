@@ -118,7 +118,7 @@ img.avatar { display: block; margin: 0 auto; }
 .section-title + .sub-heading { margin-top: 0; }
 
 /* ========== Join / Apply ========== */
-.apply-box { max-width: 760px; }
+.apply-box { max-width: 760px; margin: 0 auto; text-align: justify; }
 .apply-box p { font-size: 13px; }
 
 /* ========== Responsive ========== */
