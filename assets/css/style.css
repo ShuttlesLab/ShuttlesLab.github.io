@@ -207,6 +207,19 @@ img.avatar { display: block; margin: 0 auto; }
 .activity-card h3 { font-size: 14px; color: var(--primary-dark); margin-top: 4px; }
 .activity-card p { font-size: 13px; color: var(--muted); margin-top: 6px; line-height: 1.65; }
 
+/* ========== Privacy note ========== */
+.site-note { padding: 0 0 56px; }
+.site-note p {
+  max-width: 900px;
+  margin: 0 auto;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.75;
+  text-align: justify;
+}
+
 /* ========== Responsive ========== */
 @media (max-width: 960px) {
   .tiles { grid-template-columns: repeat(2, 1fr); }
