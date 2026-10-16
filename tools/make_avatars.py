@@ -55,6 +55,10 @@ PEOPLE = {
     "avatar-jiuyang.png": "Jiuyang Huang",
     "avatar-guanning.png": "Guanning Zhuang",
     "avatar-zhiang.png": "Zhiang Yuan",
+    "avatar-yongzhuo.png": "Yongzhuo Lai",
+    "avatar-yifan.png": "Yifan Guan",
+    "avatar-hongru.png": "Hongru Yang",
+    "avatar-yating.png": "Yating Zhang",
     # Alumni
     "avatar-qin.png": "Qin Huang",
     "avatar-tianrui.png": "Tianrui Bao",
