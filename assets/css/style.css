@@ -184,6 +184,7 @@ img.avatar { display: block; margin: 0 auto; }
 /* ========== Enterprise partners ========== */
 .enterprise-list { display: flex; flex-wrap: wrap; gap: 10px 32px; }
 .enterprise-list span { font-size: 14px; font-weight: 700; color: var(--primary-dark); }
+.enterprise-list a { font-size: 12px; font-weight: 600; margin-left: 5px; white-space: nowrap; }
 
 /* ========== Join / Apply ========== */
 .apply-box { max-width: 760px; margin: 0 auto; text-align: justify; }
